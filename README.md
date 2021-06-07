@@ -1,0 +1,2 @@
+# apiRestConGradle
+Microservicio con una Api Rest Cliente, Es un proyecto robusto , fue mi primera api Rest construida la cual le implemente mas adelante RestTemplate para integrarlo con mi Servidor. Este proyecto contiene una Api Rest implementa patron MVC, contiene un crud completo echo con Spring data ,  contiene validaciones, Se trabajo en base a 3 tablas relacionales y una no relacional,  dentro de los metodos CRUD hago uso de RestTemplate para consumir servicios de mi api Rest llamada  apiRestConGradlePlanillasTrabajadores
