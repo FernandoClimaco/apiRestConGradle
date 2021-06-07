@@ -1,0 +1,34 @@
+
+create database apirest;
+
+ create table pais(
+id int  primary key,
+nombre varchar(45) not null
+)
+
+create table estado(
+id int primary key,
+nombre varchar(45) not null,
+paisid int ,
+constraint pais foreign key(paisid) references pais(id) on delete cascade on update cascade 
+)
+
+
+create table persona(
+id int primary key,
+nombre varchar(45) not null,
+apellidos varchar(45) not null,
+edad int ,
+paisid int,
+estadoid int,
+constraint mipais foreign key(paisid) references pais(id) on delete cascade on update cascade,
+constraint miestado foreign key(estadoid) references estado(id) on delete cascade on update cascade
+)
+
+
+create table planillas(
+id int primary key,
+nombre varchar(45) not null,
+apellidos varchar(45) not null,
+salario decimal
+)
